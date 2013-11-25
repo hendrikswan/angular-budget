@@ -9,12 +9,12 @@ angular.module('angBudgetApp')
       link: function postLink(scope, element, attrs) {
         scope.listType = attrs.type;
 
-        scope.expense = [
+        scope.items = [
             {description: "House", amount: 1500},
             {description: "Car", amount: 300}
         ];
 
-        scope.expenseItem = {
+        scope.newItem = {
             description: '',
             amount: ''
         };
