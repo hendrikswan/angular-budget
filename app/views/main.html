@@ -22,4 +22,27 @@
   </li>
 
 
+  <li class="budget-heading income">
+    Money In
+  </li>
+  <li class="budget-input budget-row">
+    <input  class="description-input" 
+            placeholder="Add income item"
+            ng-model="incomeItem.description"
+            ng-keyup="add($event)" />
+
+    <input  class="amount-input"
+            placeholder="amount"
+            ng-model="incomeItem.amount"
+            ng-keyup="add($event)" />
+  </li>
+
+  <li class="budget-row row-animate" ng-repeat="item in income">
+      <div class="budget-description">{{item.description}}</div>
+      <div class="budget-amount">{{item.amount}}</div>
+
+      <a class="budget-delete-link " ng-click="delete(item)"></a>
+  </li>
+
+
 </ul>
