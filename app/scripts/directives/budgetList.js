@@ -6,7 +6,7 @@ angular.module('angBudgetApp')
       templateUrl: 'views/budgetList.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        
+        scope.listType = attrs.type;
       }
     };
   });
