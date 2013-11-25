@@ -40,8 +40,8 @@ angular.module('angBudgetApp')
 
 
 
-    $scope.delete = function(item){
-        $scope.income = _($scope.income).without(item);
+    $scope.delete = function(item, type){
+        $scope[type] = _($scope[type]).without(item);
     }
 
 
