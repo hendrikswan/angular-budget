@@ -26,4 +26,14 @@ angular.module('angBudgetApp')
         }
     }
 
+
+
+    $scope.delete = function(item){
+        console.log("delete item was clicked");
+    }
+
+
+
+
+
   });
