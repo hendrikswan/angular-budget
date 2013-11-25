@@ -24,16 +24,17 @@ angular.module('angBudgetApp')
     }
 
     $scope.add = function($event, type){
-        var item = _($scope.incomeItem).clone();
+        var scopeItem = $scope[type + 'Item'];
+        var item = _(scopeItem).clone();
         
         if($event.keyCode == 13 && item.description != '' && item.amount != ''){
-            $scope.incomeItem.description = '';
-            $scope.incomeItem.amount = '';
+            scopeItem.description = '';
+            scopeItem.amount = '';
 
             var amount = parseInt(item.amount);
             item.amount = amount;
             
-            $scope.income.push(item);
+            $scope[type].push(item);
         }
     }
 
