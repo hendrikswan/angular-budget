@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angBudgetApp', [
-  'ngRoute', 'ngAnimate'
+  'ngRoute'
 ])
   .config(function ($routeProvider) {
     $routeProvider
