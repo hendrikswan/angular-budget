@@ -8,6 +8,7 @@ angular.module('angBudgetApp')
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
         scope.listType = attrs.type;
+        scope.heading = attrs.heading;
 
         scope.items = [
             {description: "House", amount: 1500},
