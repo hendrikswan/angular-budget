@@ -1,1 +1,21 @@
-<p>This is the budgetList view.!!!!!!</p>
+  <li class="budget-heading expense">
+    Money Out
+  </li>
+  <li class="budget-input budget-row">
+    <input  class="description-input" 
+            placeholder="Add expense item"
+            ng-model="expenseItem.description"
+            ng-keyup="add($event, 'expense')" />
+
+    <input  class="amount-input"
+            placeholder="amount"
+            ng-model="expenseItem.amount"
+            ng-keyup="add($event, 'expense')" />
+  </li>
+
+  <li class="budget-row row-animate" ng-repeat="item in expense">
+      <div class="budget-description">{{item.description}}</div>
+      <div class="budget-amount">{{item.amount}}</div>
+
+      <a class="budget-delete-link " ng-click="delete(item, 'expense')"></a>
+  </li>
