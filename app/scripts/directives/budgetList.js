@@ -19,7 +19,7 @@ angular.module('angBudgetApp')
             amount: ''
         };
 
-        scope.add = function($event, type){
+        scope.add = function($event){
             var item = _(scope.newItem).clone();
             
             if($event.keyCode == 13 && item.description != '' && item.amount != ''){
@@ -35,7 +35,7 @@ angular.module('angBudgetApp')
 
 
 
-        scope.delete = function(item, type){
+        scope.delete = function(item){
             scope.items = _(scope.items).without(item);
         }
       }
