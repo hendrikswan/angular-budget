@@ -12,6 +12,17 @@ angular.module('angBudgetApp')
         amount: ''
     }
 
+
+    $scope.expense = [
+        {description: "House", amount: 1500},
+        {description: "Car", amount: 300}
+    ];
+
+    $scope.expenseItem = {
+        description: '',
+        amount: ''
+    }
+
     $scope.add = function($event){
         var item = _($scope.incomeItem).clone();
         
