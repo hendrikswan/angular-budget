@@ -5,17 +5,17 @@
     <input  class="description-input" 
             placeholder="Add expense item"
             ng-model="newItem.description"
-            ng-keyup="add($event, 'expense')" />
+            ng-keyup="add($event)" />
 
     <input  class="amount-input"
             placeholder="amount"
             ng-model="newItem.amount"
-            ng-keyup="add($event, 'expense')" />
+            ng-keyup="add($event)" />
   </li>
 
   <li class="budget-row row-animate" ng-repeat="item in items">
       <div class="budget-description">{{item.description}}</div>
       <div class="budget-amount">{{item.amount}}</div>
 
-      <a class="budget-delete-link " ng-click="delete(item, 'expense')"></a>
+      <a class="budget-delete-link " ng-click="delete(item)"></a>
   </li>
