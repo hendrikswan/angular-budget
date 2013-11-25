@@ -36,7 +36,7 @@ angular.module('angBudgetApp')
 
 
         scope.delete = function(item, type){
-            $scope[type] = _($scope[type]).without(item);
+            scope.items = _(scope.items).without(item);
         }
       }
     };
