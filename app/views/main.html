@@ -29,12 +29,12 @@
     <input  class="description-input" 
             placeholder="Add income item"
             ng-model="incomeItem.description"
-            ng-keyup="add($event)" />
+            ng-keyup="add($event, 'expense')" />
 
     <input  class="amount-input"
             placeholder="amount"
             ng-model="incomeItem.amount"
-            ng-keyup="add($event)" />
+            ng-keyup="add($event, 'expense')" />
   </li>
 
   <li class="budget-row row-animate" ng-repeat="item in income">
