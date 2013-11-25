@@ -23,7 +23,7 @@ angular.module('angBudgetApp')
         amount: ''
     }
 
-    $scope.add = function($event){
+    $scope.add = function($event, type){
         var item = _($scope.incomeItem).clone();
         
         if($event.keyCode == 13 && item.description != '' && item.amount != ''){
