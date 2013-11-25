@@ -29,7 +29,7 @@ angular.module('angBudgetApp')
 
 
     $scope.delete = function(item){
-        console.log("delete item was clicked");
+        $scope.income = _($scope.income).without(item);
     }
 
 
