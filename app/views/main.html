@@ -18,7 +18,7 @@
       <div class="budget-description">{{item.description}}</div>
       <div class="budget-amount">{{item.amount}}</div>
 
-      <a class="budget-delete-link " ng-click="delete(item)"></a>
+      <a class="budget-delete-link " ng-click="delete(item, 'income')"></a>
   </li>
 
 
@@ -41,7 +41,7 @@
       <div class="budget-description">{{item.description}}</div>
       <div class="budget-amount">{{item.amount}}</div>
 
-      <a class="budget-delete-link " ng-click="delete(item)"></a>
+      <a class="budget-delete-link " ng-click="delete(item, 'expense')"></a>
   </li>
 
 
